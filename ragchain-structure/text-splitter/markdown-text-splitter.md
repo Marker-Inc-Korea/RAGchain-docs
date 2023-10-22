@@ -8,7 +8,7 @@ It split based on header. <br>
 
 `metadata_etc` of `Passage` contains header information and original document information. 
 `metadata_etc` updates new header is two case. <br>
-First, whenever new header appear at document, meta_data_etc is appended new header information.<br>
+First, whenever new header appear at document, `metadata_etc` is appended new header information.<br>
 Second, when a header with an equivalent relationship appears, the metadata is initialized and the newly appeared header is included in the metadata.
 
 ## Usage
