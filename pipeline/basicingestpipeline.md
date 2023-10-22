@@ -17,7 +17,7 @@ The `BasicIngestPipeline` class is initialized with the following parameters:
 * [`file_loader`](../ragchain-structure/file-loader/) : File loader to load documents. You can use any file loader from Langchain and RAGchain.
 * [`db`](../ragchain-structure/db/): Database to save passages.
 * [`retrieval`](../ragchain-structure/retrieval/): Retrieval module to ingest passages.
-* [`text_splitter`](../ragchain-structure/text-spliter/): Text splitter to split document into passages. Default is [`RecursiveTextSplitter`](../ragchain-structure/text-spliter/recursive-text-splitter.md).
+* [`text_splitter`](../ragchain-structure/text-splitter/): Text splitter to split document into passages. Default is [`RecursiveTextSplitter`](../ragchain-structure/text-splitter/recursive-text-splitter.md).
 * `ignore_existed_file`: If True, ignore existed file in database. Default is True. It uses [`FileCache`](../utils/file-cache.md) internally.
 
 ```python
