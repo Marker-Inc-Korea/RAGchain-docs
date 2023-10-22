@@ -21,7 +21,7 @@ Let's explore each module in more detail.
 
 The first step in RAG workflow is data ingestion. `File Loader` module reads files containing text data. RAGchain `File Loader` modules provide full compatibility with Langchain's Document Loader, plus special OCR loaders and more.
 
-### [Text Splitter](text-spliter/)
+### [Text Splitter](text-splitter/)
 
 Once the files are loaded, we need to divide longer documents into shorter passages due to context limitations of Large Language Models (LLMs). This process is essential because LLMs can forget contexts in lengthy documents when generating responses or conducting analysis.
 
