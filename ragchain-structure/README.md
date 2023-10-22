@@ -37,7 +37,7 @@ To simplify working with multiple retrievals and databases simultaneously, we us
 
 ### [LLM](llm/)
 
-Finally comes the `LLM` module - it uses retrieved passages as input to answer user queries. Tjhe `LLM` module also supports stream, custom prompt, custom models, and chat history for your use cases.
+Finally, comes the `LLM` module - it uses retrieved passages as input to answer user queries. Tjhe `LLM` module also supports stream, custom prompt, custom models, and chat history for your use cases.
 
 ### [Reranker](./#reranker)
 
