@@ -15,8 +15,8 @@ Please note that our Text Splitter is not compatible with Langchain's text split
 ## Supporting Text Splitter
 
 1. [RecursiveTextSplitter](recursive-text-splitter.md) :&#x20;
-2. [markdown-header-text-splitter](markdown-header-text-splitter.md)
-3. [html-header-text-splitter](html-header-text-splitter.md)
+2. [markdown-header-splitter](markdown-header-splitter.md)
+3. [html-header-splitter](html-header-splitter.md)
 
 More text splitters are coming soon! ([related issue](https://github.com/NomaDamas/RAGchain/issues/255))
 
