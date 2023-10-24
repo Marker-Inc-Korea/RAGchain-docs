@@ -20,7 +20,7 @@ First, initialize an instance of `MarkDownHeaderSplitter`. For example:
 ```python
 from RAGchain.preprocess.text_splitter import MarkDownHeaderSplitter
 
-splitter = MarkDownHeaderSplitter()
+markdown_header_splitter = MarkDownHeaderSplitter()
 ```
 
 ### Split document
@@ -28,5 +28,5 @@ splitter = MarkDownHeaderSplitter()
 You can split document using `split_document()` method. It will return list of [`Passage`](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. For example:
 
 ```python
-passages = splitter.split_document(document)
+passages = markdown_header_splitter.split_document(document)
 ```
