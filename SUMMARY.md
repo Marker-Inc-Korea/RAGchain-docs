@@ -20,6 +20,7 @@
     * [VectorDB Retrieval](ragchain-structure/retrieval/vectordb-retrieval.md)
   * [LLM](ragchain-structure/llm/README.md)
     * [Basic LLM](ragchain-structure/llm/basic-llm.md)
+    * [Completion LLM](ragchain-structure/llm/completion-llm.md)
   * [DB](ragchain-structure/db/README.md)
     * [MongoDB](ragchain-structure/db/mongodb.md)
     * [Pickle DB](ragchain-structure/db/pickle-db.md)
