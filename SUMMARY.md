@@ -15,6 +15,8 @@
     * [Recursive Text Splitter](ragchain-structure/text-splitter/recursive-text-splitter.md)
     * [Markdown Header Splitter](ragchain-structure/text-splitter/markdown-header-splitter.md)
     * [HTML Header splitter](ragchain-structure/text-splitter/html-header-splitter.md)
+    * [Code splitter](ragchain-structure/text-splitter/code-splitter.md)
+    * [Token splitter](ragchain-structure/text-splitter/token-splitter.md)
   * [Retrieval](ragchain-structure/retrieval/README.md)
     * [BM25 Retrieval](ragchain-structure/retrieval/bm25-retrieval.md)
     * [Hybrid Retrieval](ragchain-structure/retrieval/hybrid-retrieval.md)
