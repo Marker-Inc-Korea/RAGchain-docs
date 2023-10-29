@@ -3,7 +3,9 @@
 ## Overview
 
 The `CodeSplitter` class in the RAGchain library is a text splitter that splits documents based on separators of langchain's library Language enum.
-This class inherits from the `BaseTextSplitter` class and uses the from_language method of [`RecursiveCharacterTextSplitter`](https://python.langchain.com/docs/modules/data_connection/document_transformers/text_splitters/code_splitter) class from the langchain library to perform the splitting.
+This class inherits from the `BaseTextSplitter` class and uses the from_language method of `RecursiveCharacterTextSplitter` class from the langchain library to perform the splitting. <br>
+Reference([Split code](https://python.langchain.com/docs/modules/data_connection/document_transformers/text_splitters/code_splitter))
+
 `CodeSplitter` supports `CPP`, `GO`, `JAVA`, `KOTLIN`, `JS`, `TS`, `PHP`, `PROTO`, `PYTHON`, `RST`, `RUBY`, `RUST`, `SCALA`, `SWIFT`, `MARKDOWN`, `LATEX`, `HTML`, `SOL`, `CSHARP`.
 
 
@@ -12,6 +14,7 @@ This class inherits from the `BaseTextSplitter` class and uses the from_language
 ### Initialization
 
 First, to initialize an instance of `CodeSplitter`, you can provide the following parameters: <br>
+
 - `language_name`: A kind of language to split. Default is PYTHON.<br>
   (CPP, GO, JAVA, KOTLIN, JS, TS, PHP, PROTO, PYTHON, RST, RUBY, RUST, SCALA, SWIFT, MARKDOWN, LATEX, HTML, SOL, CSHARP)
 - `chunk_size`: Maximum size of chunks to return. Default is 50. 
