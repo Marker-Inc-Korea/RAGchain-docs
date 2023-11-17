@@ -16,3 +16,7 @@ The Korean version of the StrategyQA dataset.
 ### [Qasper Dataset](./qasper.md)
 
 A dataset for question answering on scientific (NLP) papers. It can evaluate the retrieval performance of one NLP paper document, plus answer performance.
+
+### [MSMARCO Dataset](./ms-marco.md)
+MSMARCO (Microsoft Machine Reading Comprehension) is a large scale dataset focused on machine reading comprehension, question answering, and passage ranking.
+The passages are top-k results Bing engin searched based on question.
