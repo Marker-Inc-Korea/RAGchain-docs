@@ -14,7 +14,9 @@ MSMARCOEvaluator also support rank aware metrics like NDCG, AP, CG, IDCG, RR, et
 
 
 # Example Use
-Note: MSMARCO dataset version is optional(V1.1 or 2.1). Default is V1.1. Ingest size must be same or larger than evaluate size.
+Note: MSMARCO dataset version is optional(v1.1 or 2.1). Default is v1.1. 
+We use valiation set in v2.1 because v2.1 passage data `is_selected` values are all -1.<br>
+Ingest size must be same or larger than evaluate size.
 
 ```Python
 from RAGchain.benchmark.dataset import MSMARCOEvaluator
