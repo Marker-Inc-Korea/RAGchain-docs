@@ -7,14 +7,14 @@ description: DeepdoctectionPDFLoader Class Documentation
 ## Overview
 
 The `DeepdoctectionPDFLoader` class is a powerful tool for loading academic document PDF files. 
-It leverages the capabilities of the Deepdoctection model, developed by Meta, to provide an accurate conversion of academic papers from PDF format.&#x20;
+It leverages the capabilities of the Deepdoctection model, developed by deepdoctection, to provide an accurate conversion of academic papers from PDF format.&#x20;
 
 ## Usage
 
 ### Run Deepdoctection API sever&#x20;
 
 You must run Deepdoctection API server for using this loader. 
-You will need server with CUDA installed for running nougat model properly. More detailed installation of nougat, please go to [official github repo](https://github.com/deepdoctection/deepdoctection).
+You will need server with CUDA installed for running deepdoctection model properly. More detailed installation of deepdoctection, please go to [official github repo](https://github.com/deepdoctection/deepdoctection).
 
 #### Use Docker (Recommend)
 
@@ -25,11 +25,11 @@ git clone https://github.com/NomaDamas/deepdoctection-api-server.git
 cd deepdoctection-api-server/docker/NomaDamas-api-server
 ```
 
-Then, build and run your docker container following this [instruction](https://github.com/facebookresearch/nougat/tree/main/docker).&#x20;
+Then, build and run your docker container following this [instruction](https://github.com/NomaDamas/deepdoctection-api-server/tree/master/docker/NomaDamas-api-server).&#x20;
 
-#### Use pip
+#### Use Local Environment
 
-First, clone NomaDamas/deepdoctection repository to your machine, and move to folder.
+First, clone NomaDamas/deepdoctection-api-server repository to your machine, and move to folder.
 
 ```bash
 git clone https://github.com/NomaDamas/deepdoctection-api-server.git
@@ -39,12 +39,13 @@ cd deepdoctection-api-server
 Then, run api server with this command.
 
 ```bash
+python3 setup.py install
 python3 app.py
 ```
 
 ### Initialization
 
-After runs your Deepdoctection API server, you first need to create an instance by providing two parameters: `file_path` and `nougat_host`.
+After runs your Deepdoctection API server, you first need to create an instance by providing two parameters: `file_path` and `deepdoctection_host`.
 
 * **file\_path**: This is a string representing the path to your PDF file.
 * **deepdoctection\_host**: This is a string representing the host address where your Deepdoctection API server is running.
