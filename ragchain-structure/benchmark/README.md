@@ -16,10 +16,14 @@ The `Benchmark` module supports two types of evaluators: AutoEvaluator and Datas
 - **AutoEvaluator:** This tool allows you to evaluate your pipeline with your own questions without a dataset. It can
   evaluate retrieved passages and answers without ground truth answers and ground truth retrieved passages.
 
-- **DatasetEvaluator:** This tool can evaluate your pipeline with question answering datasets. It currently
-  supports [StrategyQA](https://allenai.org/data/strategyqa)
-  dataset, [Ko-StrategyQA](https://huggingface.co/datasets/NomaDamas/Ko-StrategyQA) dataset,
-  and [Qasper](https://allenai.org/data/qasper) dataset.
+- **DatasetEvaluator:** This tool can evaluate your pipeline with question answering datasets.
+  
+
+## Supporting Datasets
+- [StrategyQA](https://allenai.org/data/strategyqa)
+- [Ko-StrategyQA](https://huggingface.co/datasets/NomaDamas/Ko-StrategyQA)
+- [Qasper](https://allenai.org/data/qasper)
+- [MS-MARCO](./dataset-evaluator/ms-marco.md)
 
 ## Supporting Metrics
 
