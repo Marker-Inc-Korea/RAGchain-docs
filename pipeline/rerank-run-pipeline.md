@@ -19,15 +19,19 @@ from RAGchain.reranker import MonoT5Reranker
 
 retrieval = BM25Retrieval(save_path="path/to/your/bm25/save_path") 
 reranker = MonoT5Reranker()
-pipeline = RerankRunPipeline(retrieval=retrieval, reranker=reranker) 
+pipeline = RerankRunPipeline(retrieval=retrieval, reranker=reranker, llm=OpenAI()) 
 ```
 
-#### Ask
+#### Run Pipeline
 
-You can ask a question to the LLM model and get an answer as well as used passages using `run` method.
+The `run` variable is runnable of Langchain LCEL. So you can use all method for running pipeline, like `invoke`, `stream`, `batch`, and so on.
 
 ```python
-question = "What is AI?"
-answer, passages = pipeline.run(question, retrieve_size=50, use_passage_count=4) # use 50 passages for reranking, and use top-4 passages to generate answer after reranking
-print(answer)
+answer = pipeline.run.invoke({"question": "Where is the capital of Korea?"})
+```
+
+If you want to get used passages or relevance scores of retrieved passages, you can use `get_passages_and_run` method.
+
+```python
+answers, passages, scores = pipeline.get_passages_and_run(["Where is the capital of Korea?"])
 ```

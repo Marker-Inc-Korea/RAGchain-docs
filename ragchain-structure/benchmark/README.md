@@ -16,10 +16,14 @@ The `Benchmark` module supports two types of evaluators: AutoEvaluator and Datas
 - **AutoEvaluator:** This tool allows you to evaluate your pipeline with your own questions without a dataset. It can
   evaluate retrieved passages and answers without ground truth answers and ground truth retrieved passages.
 
-- **DatasetEvaluator:** This tool can evaluate your pipeline with question answering datasets. It currently
-  supports [StrategyQA](https://allenai.org/data/strategyqa)
-  dataset, [Ko-StrategyQA](https://huggingface.co/datasets/NomaDamas/Ko-StrategyQA) dataset,
-  and [Qasper](https://allenai.org/data/qasper) dataset.
+- **DatasetEvaluator:** This tool can evaluate your pipeline with question answering datasets.
+  
+
+## Supporting Datasets
+- [StrategyQA](https://allenai.org/data/strategyqa)
+- [Ko-StrategyQA](https://huggingface.co/datasets/NomaDamas/Ko-StrategyQA)
+- [Qasper](https://allenai.org/data/qasper)
+- [MS-MARCO](./dataset-evaluator/ms-marco.md)
 
 ## Supporting Metrics
 
@@ -47,9 +51,9 @@ Each evaluator supports different metrics.
 | ragas context-precision |                  ✅                   |                    ✅                    |                            ✅                            |                         ✅                         |                      ✅                      |
 | ragas answer-relevancy  |                  ✅                   |                    ✅                    |                            ❌                            |                         ❌                         |                      ✅                      |
 |   ragas faithfullness   |                  ✅                   |                    ✅                    |                            ❌                            |                         ❌                         |                      ✅                      |
-|          BLEU           |                  🚧                   |                    🚧                    |                            🚧                            |                         🚧                         |                     🚧                      |
-|         ROUGE-L         |                  🚧                   |                    🚧                    |                            🚧                            |                         🚧                         |                     🚧                      |
-
+|          BLEU           |                  ❌                   |                    ✅                    |                            ❌                            |                         ❌                         |                      ✅                      |
+|         ROUGE-L         |                  🚧                  |                   🚧                    |                           🚧                            |                        🚧                         |                     🚧                      |
+|           KF1           |                  ❌                   |                    ✅                    |                            ❌                            |                         ❌                         |                      ✅                      |
 
 ## Role of the Evaluator in the Framework
 
@@ -66,4 +70,5 @@ and help in identifying areas of improvement.
   create your own Evaluator for new datasets.
 
 - **Easy to Use:** The evaluators come with an easy-to-use interface. You just need to provide your pipeline, and the
-  evaluators will take care of the rest. You even don't have to download the datasets. The evaluators will download the dataset automatically.
+  evaluators will take care of the rest. You even don't have to download the datasets. The evaluators will download the
+  dataset automatically.

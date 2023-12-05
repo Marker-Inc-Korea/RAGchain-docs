@@ -28,12 +28,9 @@ To use a pipeline within the RAGchain framework:
 Here's an example using [`BasicRunPipeline`](basicrunpipeline.md):
 
 ```python
-from RAGchain.pipeline.basic import BasicRunPipeline
-from RAGchain.retrieval import BM25Retrieval
-
-pipeline = BasicRunPipeline(retrieval=BM25Retrieval(save_path="your-bm25.pkl"))
+pipeline = BasicRunPipeline(BM25Retrieval(save_path="your-bm25.pkl"), OpenAI())
 question = "What is the purpose of RAGchain project?"
-answer, passages = pipeline.run(question)
+answer = pipeline.run.invoke({"question": question})
 ```
 
 ### Building Your Own Pipeline
@@ -41,3 +38,7 @@ answer, passages = pipeline.run(question)
 While we provide various pipelines for convenience, we also understand that developers may want more control over their workflows or require something unique that isn't covered by our existing pipelines.
 
 You're free to build your own custom pipelines using individual components provided by our framework if none of our pre-built pipelines meet your specific needs.
+
+Plus, you can use your workflow without using pipeline. You can use LCEL's runnable directly. Please check out [LCEL documentation](../ragchain-structure/llm/README.md) for more information.
+
+But, you have to make `Pipeline` class for evaluating your pipeline using our [`Evaluator`](../ragchain-structure/benchmark/README.md).

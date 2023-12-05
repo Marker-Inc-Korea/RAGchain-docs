@@ -10,23 +10,31 @@ Visconde pipeline perform three task: decompose, retrieve, and aggregate. It use
 
 #### Initialize
 
-To create an instance of `ViscondeRunPipeline`, you need to provide an instance of a [`Retrieval`](../retrieval/) class. Optionally, you can specify the [name of the LLM model for decomposition](../utils/query-decomposition.md), a custom system prompt, and other options for [`CompletionLLM`](../ragchain-structure/llm/completion-llm.md)
-It has a default prompt for strategyQA style multi-hop questions. You need to change prompt using prompt_func if you want to use another few-shot prompts.
+To create an instance of `ViscondeRunPipeline`, you need to provide an instance of a [`Retrieval`](../retrieval/) class, and llm module to generate answer. Optionally, you can specify the instance of [query decomposition module](../utils/query-decomposition.md), a custom prompt, and other options for retrieval and use passage count for generation.
+FYI, you can't use chat model for this pipeline.
+It has a default prompt for strategyQA style multi-hop questions. You need to change prompt using PromptTemplate if you want to use another few-shot prompts.
 
 ```python
 from RAGchain.pipeline import ViscondeRunPipeline
 from RAGchain.retrieval import BM25Retrieval
+from langchain.llms.openai import OpenAI
 
 retrieval = BM25Retrieval(save_path="path/to/your/bm25/save_path")
-pipeline = ViscondeRunPipeline(retrieval)
+pipeline = ViscondeRunPipeline(retrieval, OpenAI(model_name="babbage-002"))
 ```
 
 #### Ask
 
-You can ask a question to the LLM model and get an answer as well as used passages using `run` method.
+You can ask a question to the LLM model and get an answer using `invoke` method. Also, you can use another LCEL's method like stream or batch as well.
 
 ```python
 question = "Is reranker and retriever have same role?"
-answer, passages = pipeline.run(question)
+answer = pipeline.run.invoke({"question": question})
 print(answer)
+```
+
+If you want to get used passages or relevance scores of retrieved passages, you can use `get_passages_and_run` method.
+
+```python
+answers, passages, scores = pipeline.get_passages_and_run([question])
 ```

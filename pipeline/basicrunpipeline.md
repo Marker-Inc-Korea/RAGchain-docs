@@ -18,21 +18,20 @@ The `BasicRunPipeline` class is initialized with the following parameters:
 * `llm`: LLM module to get answer. If not provided, a default `BasicLLM` module is used.
 
 ```python
-from RAGchain.pipeline.basic import BasicRunPipeline
-from RAGchain.retrieval import BM25Retrieval
-from RAGchain.llm.basic import BasicLLM
-
 retrieval = BM25Retrieval(save_path="./bm25.pkl")
-llm = BasicLLM(retrieval)
-pipeline = BasicRunPipeline(retrieval=retrieval, llm=llm)
+pipeline = BasicRunPipeline(retrieval=retrieval, llm=OpenAI())
 ```
 
 ### Run
 
-The `run` method executes the run pipeline. It takes a `query` string as input and returns a tuple containing the answer and the retrieved passages.
+The `run` variable is runnable of Langchain LCEL. So you can use all method for running pipeline, like `invoke`, `stream`, `batch`, and so on.
 
 ```python
-answer, passages = pipeline.run(query="Where is the capital of Korea?")
+answer = pipeline.run.invoke({"question": "Where is the capital of Korea?"})
 ```
 
-This method will retrieve passages from the retrieval module, run the LLM module to get an answer, and return the answer and the retrieved passages.
+If you want to get used passages or relevance scores of retrieved passages, you can use `get_passages_and_run` method.
+
+```python
+answers, passages, scores = pipeline.get_passages_and_run(["Where is the capital of Korea?"])
+```
