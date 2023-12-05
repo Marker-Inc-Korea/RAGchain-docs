@@ -47,9 +47,9 @@ Each evaluator supports different metrics.
 | ragas context-precision |                  ✅                   |                    ✅                    |                            ✅                            |                         ✅                         |                      ✅                      |
 | ragas answer-relevancy  |                  ✅                   |                    ✅                    |                            ❌                            |                         ❌                         |                      ✅                      |
 |   ragas faithfullness   |                  ✅                   |                    ✅                    |                            ❌                            |                         ❌                         |                      ✅                      |
-|          BLEU           |                  🚧                   |                    🚧                    |                            🚧                            |                         🚧                         |                     🚧                      |
-|         ROUGE-L         |                  🚧                   |                    🚧                    |                            🚧                            |                         🚧                         |                     🚧                      |
-
+|          BLEU           |                  ❌                   |                    ✅                    |                            ❌                            |                         ❌                         |                      ✅                      |
+|         ROUGE-L         |                  🚧                  |                   🚧                    |                           🚧                            |                        🚧                         |                     🚧                      |
+|           KF1           |                  ❌                   |                    ✅                    |                            ❌                            |                         ❌                         |                      ✅                      |
 
 ## Role of the Evaluator in the Framework
 
@@ -66,4 +66,5 @@ and help in identifying areas of improvement.
   create your own Evaluator for new datasets.
 
 - **Easy to Use:** The evaluators come with an easy-to-use interface. You just need to provide your pipeline, and the
-  evaluators will take care of the rest. You even don't have to download the datasets. The evaluators will download the dataset automatically.
+  evaluators will take care of the rest. You even don't have to download the datasets. The evaluators will download the
+  dataset automatically.
