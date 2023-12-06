@@ -20,3 +20,7 @@ A dataset for question answering on scientific (NLP) papers. It can evaluate the
 ### [MSMARCO Dataset](./ms-marco.md)
 MSMARCO (Microsoft Machine Reading Comprehension) is a large scale dataset focused on machine reading comprehension, question answering, and passage ranking.
 The passages are top-k results Bing engin searched based on question.
+
+### [MrTyDi Dataset](./mr-tydi.md)
+Mr.TyDi is a multi-lingual benchmark dataset built on TyDi.
+Mr.TyDi apply for languages that is 11 diverse languages and 1 combined diverse languages.
