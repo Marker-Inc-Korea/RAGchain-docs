@@ -23,7 +23,7 @@ Reranking is a popular method used in many research projects to improve retrieva
 
 ### **Great to use multiple retrievers**
 
-In real-world scenarios, you may need multiple retrievers depending on your requirements. RAGchain is highly optimized for using multiple retrievers. It divides retrieval and DB. [`Retrieval`](ragchain-structure/retrieval/) saves vector representation of contents, and [`DB`](ragchain-structure/db/) saves contents. We connect both with Linker, so it is really easy to use multiple retrievers and DBs.
+In real-world scenarios, you may need multiple retrievers depending on your requirements. RAGchain is highly optimized for using multiple retrievers. It divides retrieval and DB. [`Retrieval`](ragchain-structure/retrieval/README.md) saves vector representation of contents, and [`DB`](ragchain-structure/db/README.md) saves contents. We connect both with Linker, so it is really easy to use multiple retrievers and DBs.
 
 ### **pre-made RAG pipelines**
 
@@ -35,7 +35,7 @@ It is crucial to benchmark and test your RAG workflows. We have easy benchmarkin
 
 ## Compatibility with Langchain
 
-You can use [Document Loaders](https://integrations.langchain.com/), [Vector Stores](https://integrations.langchain.com/vectorstores), and [Embedding Models](https://integrations.langchain.com/embeddings) at RAGchain. Three of them are compatible with RAGchain. Don't worry about lack of integrations that new framework is commonly suffered.&#x20;
+You can use [Document Loaders](https://integrations.langchain.com/), [Vector Stores](https://integrations.langchain.com/vectorstores), [Embedding Models](https://integrations.langchain.com/embeddings), [LLM Models](https://integrations.langchain.com/llms) at RAGchain. Three of them are compatible with RAGchain. Don't worry about lack of integrations that new framework is commonly suffered.&#x20;
 
 Langchain's speciality is amount of integrations they made. RAGchain uses that power, and focus on only RAG system quality and efficiency.&#x20;
 
