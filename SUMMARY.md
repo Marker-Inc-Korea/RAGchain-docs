@@ -48,6 +48,7 @@
     * [Chroma Slim](utils/slim-vector-store/chroma-slim.md)
   * [File Cache](utils/file-cache.md)
   * [Linker](utils/linker.md)
+  * [REDE Search Detector](utils/rede-search-detector.md)
 * [Pipeline](pipeline/README.md)
   * [BasicIngestPipeline](pipeline/basicingestpipeline.md)
   * [BasicRunPipeline](pipeline/basicrunpipeline.md)
