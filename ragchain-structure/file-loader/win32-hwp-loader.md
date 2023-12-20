@@ -1,6 +1,6 @@
-## Win32HwpLoader Class
+# Win32HwpLoader Class
 
-### Overview
+## Overview
 
 The `Win32HwpLoader` class is a base loader for loading HWP files in a Windows environment. It uses the `pywin32` library to facilitate this process. The class can handle both `.hwp` and `.hwpx` file formats.
 
@@ -11,7 +11,7 @@ The `Document` objects also contain metadata such as the `source` for file path 
 
 However, please note that `Win32HwpLoader` is only suitable for Windows. If you need to handle HWP files on macOS or Linux, consider using [`RustHwpLoader`](./rust-hwp-loader.md).
 
-### Usage
+## Usage
 
 To use the `Win32HwpLoader` class, you need to initialize it with the path to the HWP file:
 
