@@ -1,6 +1,3 @@
-너무 용량이 커서 미리 preprocessing된걸 씀
-mdqa task에서 가져온걸 씀.
-
 # Overview
 
 The Natural Questions (NQ) dataset, introduced by Google, consists of real user queries issued to Google Search 
@@ -9,7 +6,7 @@ and answers derived from Wikipedia by annotators. Its primary purpose is to trai
 Each example in the dataset consists of a Google query and a corresponding Wikipedia page. 
 The Wikipedia page has a passage or long answer annotated on it that answers the question, 
 along with one or more short spans from the annotated passage containing the actual answer. 
-We use long answers in this task.<br>
+We use long answers as answer ground truth in this task.<br>
 Further information if you want, Refer to below link!
 
 [Github](https://github.com/google-research-datasets/natural-questions)
@@ -17,7 +14,7 @@ Further information if you want, Refer to below link!
 
 Raw natural qa dataset is too large, so we use natural questions short qa by lucadiliello generated at mrqa 2021 in huggingface.
 <br> 
-link: https://huggingface.co/datasets/lucadiliello/naturalquestionsshortqa
+[link](https://huggingface.co/datasets/lucadiliello/naturalquestionsshortqa)
 
 
 # Example Use
