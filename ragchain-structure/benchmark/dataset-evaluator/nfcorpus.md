@@ -36,6 +36,7 @@ print(result.each_results)
 
 # Trouble Shooting
 ### 1. pcre.h File Not Found(MAC OS)
+
 ```Bash
 ERROR: Could not build wheels for pyautocorpus, which is required to install pyproject.toml-based projects
 ```
@@ -43,7 +44,10 @@ ERROR: Could not build wheels for pyautocorpus, which is required to install pyp
 If you have trouble with this error, you need to install the pcre library.<br>
 [reference](https://stackoverflow.com/questions/22555561/error-building-fatal-error-pcre-h-no-such-file-or-directory)
 
+
+
 ### 2. Python.h Missing Error.(MAC OS)
+
 In the case of a missing python.h error, add an environment variable as follows.
 
 ```
