@@ -24,3 +24,7 @@ The passages are top-k results Bing engin searched based on question.
 ### [MrTyDi Dataset](./mr-tydi.md)
 Mr.TyDi is a multi-lingual benchmark dataset built on TyDi.
 Mr.TyDi apply for languages that is 11 diverse languages and 1 combined diverse languages.
+
+### [TriviaQA Dataset](./trivia-qa.md)
+TriviaQa is a question-answer-evidence triples dataset. Questions-answer pairs are collected 
+from 14 trivia and quiz-league websites and evidence are collected from Wikipedia articles and Web search results.

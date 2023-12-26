@@ -41,6 +41,7 @@
       * [Ko-Strategy-QA](ragchain-structure/benchmark/dataset-evaluator/ko-strategy-qa.md)
       * [Strategy-QA](ragchain-structure/benchmark/dataset-evaluator/strategy-qa.md)
       * [ms-marco](ragchain-structure/benchmark/dataset-evaluator/ms-marco.md)
+      * [trivia-qa](ragchain-structure/benchmark/dataset-evaluator/trivia-qa.md)
 * [Utils](utils/README.md)
   * [Query Decomposition](utils/query-decomposition.md)
   * [Evidence Extractor](utils/evidence-extractor.md)
