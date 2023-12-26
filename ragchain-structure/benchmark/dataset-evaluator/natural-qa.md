@@ -20,18 +20,15 @@ Raw natural qa dataset is too large, so we use natural questions short qa by luc
 link: https://huggingface.co/datasets/lucadiliello/naturalquestionsshortqa
 
 # Example Use
-Notice: Mr.TyDi questions and passages are all same languages in each language datasets.
-If you want to combined language datasets, you can input 'combined' at language parameter.<br>
-Each language datasets are not translated. They are independent question - passage datasets.
 
 ```Python
-from RAGchain.benchmark.dataset import MrTydiEvaluator
+from RAGchain.benchmark.dataset import NaturalQAEvaluator
 
 pipeline = <your pipeline>
 retrievals = [<your retrieval>]
 db = <your db>
 
-evaluator = MrTydiEvaluator(pipeline, language = 'English', evaluate_size=20)
+evaluator = NaturalQAEvaluator(pipeline, evaluate_size=20)
 evaluator.ingest(retrievals, db) # ingest dataset to db and retrievals
 result = evaluator.evaluate()
 
