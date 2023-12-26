@@ -24,3 +24,7 @@ The passages are top-k results Bing engin searched based on question.
 ### [MrTyDi Dataset](./mr-tydi.md)
 Mr.TyDi is a multi-lingual benchmark dataset built on TyDi.
 Mr.TyDi apply for languages that is 11 diverse languages and 1 combined diverse languages.
+
+### [BEIR Dataset](./beir.md)
+BEIR is a heterogeneous benchmark that has been built from 18 diverse datasets representing 9 information retrieval tasks.
+In this project, we use 6 dataset, FEVER, FIQA, HOTPOTQA, QUORA, SCIDOCS, and SCIFACT.
