@@ -27,8 +27,8 @@ pipeline = <your pipeline>
 retrievals = [<your retrieval>]
 db = <your db>
 
-evaluator = <your beir evaluator>(pipeline, evaluate_size=5)
-evaluator.ingest(retrievals=[retrievals], db=db, ingest_size=20) # ingest dataset to db and retrievals
+evaluator = <your beir evaluator>(pipeline, evaluate_size=20)
+evaluator.ingest(retrievals=[retrievals], db=db) # ingest dataset to db and retrievals
 result = evaluator.evaluate()
 
 # print result summary (mean values)
