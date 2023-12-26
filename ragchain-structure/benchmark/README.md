@@ -25,6 +25,7 @@ The `Benchmark` module supports two types of evaluators: AutoEvaluator and Datas
 - [Qasper](https://allenai.org/data/qasper)
 - [MS-MARCO](./dataset-evaluator/ms-marco.md)
 - [Mr-Tydi](./dataset-evaluator/mr-tydi.md)
+- [antique](./dataset-evaluator/antique.md)
 
 ## Supporting Metrics
 
