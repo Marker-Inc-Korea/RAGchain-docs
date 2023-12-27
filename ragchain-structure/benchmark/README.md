@@ -29,10 +29,10 @@ The `Benchmark` module supports two types of evaluators: AutoEvaluator and Datas
 
 ## Supporting Metrics
 
-Each evaluator supports different metrics.
-Default metrics is basically running metrics if you run test file.
-Support metrics is the metrics you are available.
-This separation is because Ragas metrics take a long time in evaluation.
+Each evaluator supports various metrics. <br>
+The default metric refers to the metric that is essentially executed when you run the test file.<br>
+Support metrics refer to those that are available for use.<br>
+This distinction exists because the evaluation process for Ragas metrics is time-consuming.
 
 ✅ means that the evaluator supports the metric.
 ❌ means that the evaluator does not support the metric.
