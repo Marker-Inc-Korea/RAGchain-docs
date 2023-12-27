@@ -6,8 +6,8 @@ NutritionFacts.org site. It includes 169,756 automatically extracted relevance j
 characterized by a complex and terminology-heavy language, primarily sourced from PubMed.<br>
 Further information about NFCorpus, please visit below website.
 
-[nfcorpus ir_datasets](https://ir-datasets.com/nfcorpus.html)
-[Homepage](https://www.cl.uni-heidelberg.de/statnlpgroup/nfcorpus/)
+[nfcorpus ir_datasets](https://ir-datasets.com/nfcorpus.html)<br>
+[Homepage](https://www.cl.uni-heidelberg.de/statnlpgroup/nfcorpus/)<br>
 [Paper](https://link.springer.com/chapter/10.1007/978-3-319-30671-1_58)
 
 # Example Use
