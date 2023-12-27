@@ -1,12 +1,13 @@
 # Overview
 
-ANTIQUE is a collection of 2,626 open-domain non-factoid questions from a diverse set of categories. The dataset 
-contains 34,011 manual relevance annotations. The questions were asked by real users in a community question answering 
-service, i.e., Yahoo! Answers. Relevance judgments for all the answers to each question were collected through crowdsourcing.
+ANTIQUE comprises 2,626 open-domain non-factoid questions sourced from various categories, with a total of 34,011 
+manually annotated relevance judgments. These questions originated from real users on Yahoo! Answers, a community 
+question answering service. The process of gathering relevance judgments for all corresponding answers involved crowdsourcing.
 
+It is great to evaluate retrieval performance because this dataset designed for information retrieval benchmark.
 
-[antique ir_datasets](https://ir-datasets.com/antique.html)
-[Homepage](https://ciir.cs.umass.edu/downloads/Antique/)
+[antique ir_datasets](https://ir-datasets.com/antique.html)<br>
+[Homepage](https://ciir.cs.umass.edu/downloads/Antique/)<br>
 [Paper](https://paperswithcode.com/paper/antique-a-non-factoid-question-answering)
 
 # Example Use
