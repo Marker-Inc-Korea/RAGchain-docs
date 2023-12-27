@@ -52,6 +52,8 @@
   * [File Cache](utils/file-cache.md)
   * [Linker](utils/linker/README.md)
     * [Redis Linker](utils/linker/redis_linker.md)
+    * [Dynamo Linker](utils/linker/dynamo_linker.md)
+    * [Json Linker](utils/linker/json_linker.md)
   * [REDE Search Detector](utils/rede-search-detector.md)
 * [Pipeline](pipeline/README.md)
   * [BasicIngestPipeline](pipeline/basicingestpipeline.md)
