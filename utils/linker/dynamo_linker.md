@@ -56,6 +56,6 @@ print(data)
 # Flush the DynamoDB database
 linker.flush_db()
 ```
-Please note that the put_json method requires a unique ID and a JSON data as parameters. 
-The get_json method requires a list of IDs as a parameter. 
-The flush_db method does not require any parameters.
+Please note that the `put_json` method requires a unique ID and a JSON data as parameters. 
+The `get_json` method requires a list of IDs as a parameter. 
+The `flush_db` method does not require any parameters.
