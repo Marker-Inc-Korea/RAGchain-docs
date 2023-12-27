@@ -22,6 +22,7 @@ By using an OCR loader for file ingestion, you're improving your chances of obta
 
 1. [Nougat](nougat-loader.md) : Nougat is powerful model for parsing academic document PDF files to mathpix markdown texts, made by Meta. It is great choice to use Nougat when you want to ingest academic paper pdf files.
 
-More models are coming soon!
+2. [Deepdoctection](deepdoctection-loader.md) : deepdoctection is a Python library that orchestrates document extraction and document layout analysis tasks using deep learning models. It does not implement models but enables you to build pipelines using highly acknowledged libraries for object detection, OCR and selected NLP tasks and provides an integrated framework for fine-tuning, evaluating and running models. For more specific text processing tasks use one of the many other great NLP libraries.
 
-\
+
+More models are coming soon!
