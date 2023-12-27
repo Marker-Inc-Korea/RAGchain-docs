@@ -28,7 +28,7 @@ pickle_db.create_or_load()
 
 ### 3. Save Passage
 
-You can save passages to your pickle database using the `save` method. This method accepts a list of [Passage](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. The passages are saved to the pickle file and also to the [Linker](../../utils/linker/redis_linker.md).
+You can save passages to your pickle database using the `save` method. This method accepts a list of [Passage](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. The passages are saved to the pickle file and also to the [Linker](../../utils/linker/README.md).
 
 ```python
 passages = [...]  # replace with your list of Passage objects
