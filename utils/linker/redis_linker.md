@@ -52,5 +52,5 @@ print(data)
 linker.flush_db()
 ```
 
-lease note that the `put_json` method requires a unique ID and a JSON data as parameters. 
+Please note that the `put_json` method requires a unique ID and a JSON data as parameters. 
 The `get_json` method requires a list of IDs as a parameter. The `flush_db` method does not require any parameters.
