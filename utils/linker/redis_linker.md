@@ -2,7 +2,7 @@
 description: Redis Linker Class Documentation
 ---
 
-# Linker
+# Redis Linker
 
 ## Overview
 
