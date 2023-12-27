@@ -1,18 +1,18 @@
 # Overview
 
 BEIR is a heterogeneous benchmark that has been built from 18 diverse datasets representing 9 information retrieval tasks.
-Using project, we use 6 datasets, FEVER, FIQA, HOTPOTQA, QUORA, SCIDOCS, and SCIFACT.
+In this project, six datasets are utilized: FEVER, FIQA, HOTPOTQA, QUORA, SCIDOCS, and SCIFACT.
 More information about beir dataset, please visit link!
+
 
 [Github](https://github.com/beir-cellar/beir?tab=readme-ov-file)<br>
 [Paper](https://openreview.net/forum?id=wCu6T5xFjeJ)<br>
 [HuggningFace](https://huggingface.co/BeIR)
 
-Our BEIR benchmark structure is like below picture.
-Basic preprocessing process is same at 6 benchmark dataset,
-so we construct preprocess, ingest, evaluation process are in BaseBeirEvaluator class.
-Each evaluator class corresponding to the benchmark datasets
-(FEVER, FIQA, HOTPOTQA, QUORA, SCIDOCS, and SCIFACT) inherits from the BaseBeirEvaluator.
+The structure of our BEIR benchmark is depicted in the image below. All six benchmark datasets share 
+the same basic preprocessing process. Therefore, we have encapsulated the preprocessing, ingestion, and 
+evaluation processes into the BaseBeirEvaluator class. Each evaluator class, which corresponds to the benchmark datasets 
+(FEVER, FIQA, HOTPOTQA, QUORA, SCIDOCS, and SCIFACT), inherits from the BaseBeirEvaluator.
 
 ![beir-structure.png](../../../.gitbook/assets/beir-structure.png)
 
