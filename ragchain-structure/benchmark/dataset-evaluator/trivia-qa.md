@@ -2,8 +2,9 @@
 
 TriviaQA is a question-answer-evidence triples dataset. Questions-answer pairs are collected
 from 14 trivia and quiz-league websites and evidence are collected from top-k Wikipedia articles and Web search results.
-We use unfiltered version of TriviaQA. Because it is not all documents for a given question contain the answer strings
-contrasted RC(Reading Comprehension) version. So unfiltered dataset more appropriate for our RAG task.
+We opt for the unfiltered version of TriviaQA. This choice is made because not all documents associated with a particular
+question contain the answer strings. Consequently, the unfiltered version dataset is more suitable 
+for our RAG (Retrieval-Augmented Generation) task compared to the RC (Reading Comprehension) version.
 
 [HuggingFace](https://huggingface.co/datasets/trivia_qa)<br>
 [Github](https://github.com/mandarjoshi90/triviaqa)<br>
