@@ -26,7 +26,7 @@ To use the DynamoLinker class, you first need to set the required **environment 
 These include `LINKER_TYPE`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, and `DYNAMODB_TABLE_NAME`.
 
 ```Python
-LINKER_TYPE="redisdb"
+LINKER_TYPE="dynamodb"
 AWS_ACCESS_KEY_ID="your aws access key id"
 AWS_SECRET_ACCESS_KEY="your aws secret access key"
 AWS_REGION="your AWS region"
