@@ -33,7 +33,7 @@ After splitting texts into passages, these contents must be converted into vecto
 
 ### [DB](db/)
 
-To simplify working with multiple retrievals and databases simultaneously, we use `DB` and [`Linker`](../utils/linker.md). In RAGchain, all passage contents and metadata must store in `DB`. And `Linker` is a utility that automatically connects multiple retrieval instances with their respective DBs. With `Linker`, managing multiple retrievals becomes really easy task.
+To simplify working with multiple retrievals and databases simultaneously, we use `DB` and [`Linker`](../utils/linker/redis_linker.md). In RAGchain, all passage contents and metadata must store in `DB`. And `Linker` is a utility that automatically connects multiple retrieval instances with their respective DBs. With `Linker`, managing multiple retrievals becomes really easy task.
 
 ### [LLM](llm/)
 

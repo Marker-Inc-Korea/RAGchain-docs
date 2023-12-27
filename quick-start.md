@@ -14,7 +14,7 @@ The fastest way to use RAGchain is using [pipeline](pipeline/README.md). In this
 
 ### Setup
 
-Before run pipelines, you need to make Redis DB. It is essential part for link retrieval and DB. Please read [`Linker`](utils/linker.md) docs for more information.
+Before run pipelines, you need to make Redis DB. It is essential part for link retrieval and DB. Please read [`Linker`](utils/linker/redis_linker.md) docs for more information.
 
 Great way to make Redis DB is using free Redis.com DB. Go to [redis.com](https://redis.com/try-free/) and make your database.
 

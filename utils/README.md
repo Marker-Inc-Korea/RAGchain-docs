@@ -11,4 +11,4 @@ Utils is set of useful tools in RAGchain. It includes useful tool for obtain bet
 * [Embedding](embedding.md)
 * [Slim Vector Store](slim-vector-store/)
 * [File Cache](file-cache.md)
-* [Linker](linker.md)
+* [Linker](linker/redis_linker.md)
