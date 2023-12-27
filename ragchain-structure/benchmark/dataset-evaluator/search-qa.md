@@ -12,6 +12,11 @@ You can easily access answer of each question using `EvaluateResult.each_results
 [Github](https://github.com/nyu-dl/dl4ir-searchQA)
 [Paper](https://arxiv.org/abs/1704.05179)
 
+Raw natural qa dataset is too large, so we use natural questions short qa by lucadiliello generated at mrqa 2021 in huggingface.
+<br> 
+[link](https://huggingface.co/datasets/lucadiliello/naturalquestionsshortqa)
+
+
 # Example Use
 
 ```Python
