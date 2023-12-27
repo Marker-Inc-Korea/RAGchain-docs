@@ -11,9 +11,9 @@ The Linker plays a vital role in managing the storage of JSON data in the RAGCha
 
 The Singleton design of the Linker ensures that only one instance of the Linker is ever created, preventing potential data inconsistencies and ensuring that all parts of the application are working with the same data.
 ## Supporting Linker DB
-1. [Redis Linker](redis_linker.md):
-2. [Dynamo Linker](dynamo_linker.md):
-3. [Json Linker](json_linker.md): 
+1. [Redis Linker](redis_linker.md)
+2. [Dynamo Linker](dynamo_linker.md)
+3. [Json Linker](json_linker.md)
 
 ## Usage
 To use the Linker in your application, you will need to set the `LINKER_TYPE` environment variable in your `.env` file. 
@@ -26,6 +26,6 @@ If you need to create multiple instances of the Linker for testing purposes, you
 However, we strongly recommend that you **only create one instance** for normal application use to avoid potential data inconsistencies.
 
 Here is an example of how to create an instance of the Linker:
-```Python
+```
 LINKER_TYPE="redisdb or dynamodb or json"
 ```
