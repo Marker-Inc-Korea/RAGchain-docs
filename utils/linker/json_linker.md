@@ -21,7 +21,7 @@ It requires the `JSON_LINKER_PATH` environment variable to be set, which specifi
 ## Usage
 To use the `JsonLinker` class, you first need to set the required environment variable `LINKER_TYPE`and `JSON_LINKER_PATH`.
 
-```Python
+```
 LINKER_TYPE="json"
 JSON_LINKER_PATH="json file path(name)"
 ```
