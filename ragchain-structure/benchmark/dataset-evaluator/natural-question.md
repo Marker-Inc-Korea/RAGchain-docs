@@ -6,6 +6,8 @@ and answers derived from Wikipedia by annotators. Its primary purpose is to trai
 Each example in the dataset consists of a Google query and a corresponding Wikipedia page. 
 The Wikipedia page has a passage or long answer annotated on it that answers the question, 
 along with one or more short spans from the annotated passage containing the actual answer.<br>
+The LLM answer metric may be inaccurate because the answers in the dataset are short-answer.
+<br>
 Further information if you want, Refer to below link!
 
 [Github](https://github.com/google-research-datasets/natural-questions)<br>
