@@ -1,5 +1,5 @@
 ---
-description: Redis Linker Class Documentation
+description: Dynamo Linker Class Documentation
 ---
 
 # Dynamo Linker
@@ -22,7 +22,7 @@ setup and configuration, replication, software patching, or cluster scaling.
 DynamoDB also offers encryption at rest, which eliminates the operational burden and complexity involved in protecting sensitive data. 
 
 ## Usage
-To use the RedisLinker class, you first need to set the required **environment variables**.
+To use the DynamoLinker class, you first need to set the required **environment variables**.
 These include `LINKER_TYPE`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, and `DYNAMODB_TABLE_NAME`.
 
 ```Python
@@ -35,7 +35,7 @@ DYNAMODB_TABLE_NAME="your dynamoDB table name"
 The DynamoLinker class will automatically create a DynamoDB table if it does not exist. 
 If a table with the specified name already exists, the class will import and use the existing table.
 
-Here is an example of how to use the `RedisLinker` class:
+Here is an example of how to use the `DynamoLinker` class:
 ```Python
 from RAGchain.utils.linker.dynamo_linker import DynamoLinker
 
