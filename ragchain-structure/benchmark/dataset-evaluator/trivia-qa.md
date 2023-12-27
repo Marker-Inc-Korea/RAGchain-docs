@@ -5,6 +5,9 @@ from 14 trivia and quiz-league websites and evidence are collected from top-k Wi
 We use unfiltered version of TriviaQA. Because it is not all documents for a given question contain the answer strings
 contrasted RC(Reading Comprehension) version. So unfiltered dataset more appropriate for our RAG task.
 
+[HuggingFace](https://huggingface.co/datasets/trivia_qa)<br>
+[Github](https://github.com/mandarjoshi90/triviaqa)<br>
+[Paper](https://arxiv.org/abs/1705.03551)
 
 # Example Use
 Notice: 
