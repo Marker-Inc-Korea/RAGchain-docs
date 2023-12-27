@@ -10,7 +10,7 @@ More information about beir dataset, please visit link!
 
 Our BEIR benchmark structure is like below picture.
 Basic preprocessing process is same at 6 benchmark dataset,
-So we construct preprocess process, ingest, evaluation code are in BaseBeirEvaluator class.
+so we construct preprocess, ingest, evaluation process are in BaseBeirEvaluator class.
 Each evaluator class corresponding to the benchmark datasets
 (FEVER, FIQA, HOTPOTQA, QUORA, SCIDOCS, and SCIFACT) inherits from the BaseBeirEvaluator.
 
