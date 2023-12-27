@@ -1,5 +1,5 @@
 ---
-description: Redis Linker Class Documentation
+description: Json Linker Class Documentation
 ---
 
 # JSON Linker
@@ -28,23 +28,23 @@ JSON_LINKER_PATH="json file path(name)"
 
 Here is an example of how to use the `JsonLinker` class:
 ```Python
-from RAGchain.utils.linker.redis_linker import RedisLinker
+from RAGchain.utils.linker import JsonLinker
 
-# Create an instance of the RedisLinker class
-linker = RedisLinker()
+# Create an instance of the JsonLinker class
+linker = JsonLinker()
 
-# Check the connection to the Redis database
+# Check the connection to the Json database
 if linker.connection_check():
-    print("Connected to Redis database")
+    print("Connected to Json database")
 
-# Put JSON data into the Redis database
+# Put JSON data into the Json database
 linker.put_json("1234", {"name": "John", "age": 30})
 
-# Get JSON data from the Redis database
+# Get JSON data from the Json database
 data = linker.get_json(["1234"])
 print(data)
 
-# Flush the Redis database
+# Flush the Json database
 linker.flush_db()
 ```
 
