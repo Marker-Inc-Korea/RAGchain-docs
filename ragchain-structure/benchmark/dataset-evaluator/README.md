@@ -27,4 +27,4 @@ Mr.TyDi apply for languages that is 11 diverse languages and 1 combined diverse 
 
 ### [BEIR Dataset](./beir.md)
 BEIR is a heterogeneous benchmark that has been built from 18 diverse datasets representing 9 information retrieval tasks.
-In this project, we use 6 dataset, FEVER, FIQA, HOTPOTQA, QUORA, SCIDOCS, and SCIFACT.
+In this project, six datasets are utilized: FEVER, FIQA, HOTPOTQA, QUORA, SCIDOCS, and SCIFACT.
