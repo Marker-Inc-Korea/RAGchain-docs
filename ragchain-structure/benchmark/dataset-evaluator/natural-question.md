@@ -11,9 +11,12 @@ Further information if you want, Refer to below link!
 [Github](https://github.com/google-research-datasets/natural-questions)<br>
 [Paper](https://research.google/pubs/natural-questions-a-benchmark-for-question-answering-research/)
 
-Raw natural qa dataset is too large, so we use natural questions short qa by lucadiliello generated at mrqa 2021 in huggingface.
-<br> 
-[link](https://huggingface.co/datasets/lucadiliello/naturalquestionsshortqa)
+Raw natural qa dataset is too large,
+This split is derived from the MRQA 2019 Shared Task, and has been formatted and filtered specifically 
+for Question Answering. For access to the original dataset, please refer to this
+[link](https://huggingface.co/datasets/lucadiliello/naturalquestionsshortqa).
+
+
 
 
 # Example Use
