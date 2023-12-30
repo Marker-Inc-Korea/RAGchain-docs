@@ -22,7 +22,7 @@ You can use this field for time-aware RAG.
 This is the simplest way to implement time-aware RAG.
 After retrieving passages, you can sort them by `content_datetime`.
 
-```Python
+```python
 query = "What is the capital of Korea?"
 retrieval = BM25Retrieval('/path/to/your/bm25.pkl')
 passages = retrieval.retreive(query)
@@ -47,7 +47,7 @@ relavnace_score + (1.0 - decay_rate) ^ hours_passed
 In this algorithm, relevance_score is normalized.
 
 You can easily use `WeightedTimeReranker` as follows:
-```Python
+```python
 query = "What is the capital of Korea?"
 retrieval = BM25Retrieval('/path/to/your/bm25.pkl')
 passage_ids, scores = retrieval.retreive_id_with_scores(query)
@@ -60,13 +60,13 @@ reranked_passages = reranker.rerank(passages, scores)
 ```
 
 
-## Set Hard Limit of Passage datetime
+## Set a Hard Limit of Passage datetime
 
 Another simply, yet powerful way to implement time-aware RAG is to set a hard limit of passage `content_datetime`.
 You can achieve this by using `retrieve_with_filter` at any [`Retrieval`](/ragchain-structure/retrieval/README.md) class you can use.
 You can set multiple time ranges at once, then it only retrieves passages in the time ranges.
 
-```Python
+```python
 from datetime import datetime
 
 query = "What is the capital of Korea?"
@@ -87,7 +87,7 @@ For clustering passages, it uses [`SemanticClustering`](../utils/semantic-cluste
 You can select `split_by_sentences` option when initializing `ClusterTimeCompressor`. If this option is True, it splits passages to each sentence and clusters them.
 This option can be helpful that each passage size is big or contain whole different meanings in one passage.
 
-```Python
+```python
 query = "What is the capital of Korea?"
 retrieval = BM25Retrieval('/path/to/your/bm25.pkl')
 passages = retrieval.retreive(query, top_k=50)
