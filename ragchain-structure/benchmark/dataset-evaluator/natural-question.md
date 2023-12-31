@@ -22,7 +22,8 @@ for Question Answering. For access to the original dataset, please refer to this
 
 
 # Example Use
-Note:The dataset answers are short spans, so answer evaluation scores might be inaccurate.<br>
+Note:
+- The dataset answers are short spans, so answer evaluation scores might be inaccurate.<br>
 
 ```Python
 from RAGchain.benchmark.dataset import NaturalQAEvaluator
