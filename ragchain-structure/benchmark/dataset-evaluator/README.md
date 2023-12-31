@@ -36,3 +36,7 @@ by annotators. NQ is designed for the training and evaluation of automatic quest
 ### [TriviaQA Dataset](./trivia-qa.md)
 TriviaQa is a question-answer-evidence triples dataset. Questions-answer pairs are collected 
 from 14 trivia and quiz-league websites and evidence are collected from Wikipedia articles and Web search results.
+
+### [NFCorpus](./nfcorpus.md)
+NFCorpus is the dataset for Medical Information Retrieval. The queries are  written in non-technical English 
+and sourced from the NutritionFacts.org site. Medical documents to retrieve are sourced from PubMed.

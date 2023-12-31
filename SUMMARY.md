@@ -42,6 +42,7 @@
       * [beir](ragchain-structure/benchmark/dataset-evaluator/beir.md)
       * [natural-question](ragchain-structure/benchmark/dataset-evaluator/natural-question.md)
       * [trivia-qa](ragchain-structure/benchmark/dataset-evaluator/trivia-qa.md)
+      * [nfcorpus](ragchain-structure/benchmark/dataset-evaluator/nfcorpus.md)
 * [Utils](utils/README.md)
   * [Query Decomposition](utils/query-decomposition.md)
   * [Evidence Extractor](utils/evidence-extractor.md)
