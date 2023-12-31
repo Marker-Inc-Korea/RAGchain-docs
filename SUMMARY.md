@@ -62,6 +62,7 @@
   * [BasicRunPipeline](pipeline/basicrunpipeline.md)
   * [RerankRunPipeline](pipeline/rerank-run-pipeline.md)
   * [ViscondeRunPipeline](pipeline/visconde-run-pipeline.md)
+  * [GoogleSearchRunPipeline](pipeline/google-search-run-pipeline.md)
 * [For Advanced RAG](advanced-rag/README.md)
   * [Time-Aware RAG](advanced-rag/time_aware_rag.md)
   * [Importance-Aware RAG](advanced-rag/importance_aware_rag.md)
