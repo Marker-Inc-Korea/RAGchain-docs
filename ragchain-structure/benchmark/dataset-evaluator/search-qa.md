@@ -9,7 +9,7 @@ The LLM answer metric may be inaccurate because the answers in the dataset are s
 
 # Example Use
 
-```Python
+```python
 from RAGchain.benchmark.dataset import StrategyQAEvaluator
 
 pipeline = <your pipeline>
