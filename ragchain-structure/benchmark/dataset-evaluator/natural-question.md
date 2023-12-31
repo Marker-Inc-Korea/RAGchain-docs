@@ -6,6 +6,7 @@ and answers derived from Wikipedia by annotators. Its primary purpose is to trai
 Each example in the dataset consists of a Google query and a corresponding Wikipedia page. 
 The Wikipedia page has a passage or long answer annotated on it that answers the question, 
 along with one or more short spans from the annotated passage containing the actual answer.<br>
+
 <br>
 Further information if you want, Refer to below link!<br>
 
@@ -21,6 +22,7 @@ for Question Answering. For access to the original dataset, please refer to this
 
 
 # Example Use
+Note:The dataset answers are short spans, so answer evaluation scores might be inaccurate.<br>
 
 ```Python
 from RAGchain.benchmark.dataset import NaturalQAEvaluator
