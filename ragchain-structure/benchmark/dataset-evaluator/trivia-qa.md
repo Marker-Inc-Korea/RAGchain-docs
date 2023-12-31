@@ -12,13 +12,15 @@ The LLM answer metric may be inaccurate because the answers in the dataset are s
 [Paper](https://arxiv.org/abs/1705.03551)
 
 # Example Use
-Notice: 
+Note: 
 - Recommend make ingest size small in docs.
 This is because when ingesting data, having one query per ground truth becomes burdensome,
 especially when there are a large number of ground truths to ingest.
 
 - The reason context_recall does not accommodate this benchmark is due to the excessive number
 of retrieval ground truths that exceed the context length in ragas metrics.
+
+- This dataset answer is short answer. So, answer metric may be inaccurate.
 
 ```Python
 from RAGchain.benchmark.dataset import TriviaQAEvaluator
