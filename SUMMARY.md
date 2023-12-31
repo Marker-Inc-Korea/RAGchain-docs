@@ -41,6 +41,7 @@
       * [ms-marco](ragchain-structure/benchmark/dataset-evaluator/ms-marco.md)
       * [beir](ragchain-structure/benchmark/dataset-evaluator/beir.md)
       * [natural-question](ragchain-structure/benchmark/dataset-evaluator/natural-question.md)
+      * [trivia-qa](ragchain-structure/benchmark/dataset-evaluator/trivia-qa.md)
 * [Utils](utils/README.md)
   * [Query Decomposition](utils/query-decomposition.md)
   * [Evidence Extractor](utils/evidence-extractor.md)

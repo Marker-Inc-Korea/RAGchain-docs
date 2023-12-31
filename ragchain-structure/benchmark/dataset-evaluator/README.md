@@ -32,3 +32,7 @@ In this project, six datasets are utilized: FEVER, FIQA, HOTPOTQA, QUORA, SCIDOC
 ### [Natural Questions Dataset](./natural-question.md)
 Natural Questions (NQ) contains real user questions issued to Google search, and answers found from Wikipedia
 by annotators. NQ is designed for the training and evaluation of automatic question answering systems.
+
+### [TriviaQA Dataset](./trivia-qa.md)
+TriviaQa is a question-answer-evidence triples dataset. Questions-answer pairs are collected 
+from 14 trivia and quiz-league websites and evidence are collected from Wikipedia articles and Web search results.
