@@ -8,7 +8,7 @@ You can easily access answer of each question using `EvaluateResult.each_results
 
 # Example Use
 
-```Python
+```python
 from RAGchain.benchmark.dataset import StrategyQAEvaluator
 
 pipeline = <your pipeline>

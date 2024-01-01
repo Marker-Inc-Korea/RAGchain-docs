@@ -19,7 +19,7 @@ Note:
 We use validation set in v2.1 because v2.1 passage data `is_selected` values are all -1.<br>
 Ingest size must be same or larger than evaluate size.
 
-```Python
+```python
 from RAGchain.benchmark.dataset import MSMARCOEvaluator
 
 pipeline = <your pipeline>

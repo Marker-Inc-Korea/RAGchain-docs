@@ -25,7 +25,7 @@ for Question Answering. For access to the original dataset, please refer to this
 Note:
 - The dataset answers are short spans, so answer evaluation scores might be inaccurate.<br>
 
-```Python
+```python
 from RAGchain.benchmark.dataset import NaturalQAEvaluator
 
 pipeline = <your pipeline>

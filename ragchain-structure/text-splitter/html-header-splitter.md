@@ -25,7 +25,7 @@ The default value is `[("h1", "Header 1"), ("h2", "Header 2"), ("h3", "Header 3"
 
 For example:
 
-```Python
+```python
 from RAGchain.preprocess.text_splitter import HTMLHeaderSplitter
 
 html_header_splitter = HTMLHeaderSplitter()
@@ -35,7 +35,7 @@ html_header_splitter = HTMLHeaderSplitter()
 
 You can split document using `split_document()` method. It will return list of [`Passage`](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. For example:
 
-```Python
+```python
 passages = html_header_splitter.split_document(document)
 ```
 

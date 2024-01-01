@@ -20,7 +20,7 @@ Also, we removed non-relevant score passages at qrels.<br>
 
 # Example Use
 
-```Python
+```python
 from RAGchain.benchmark.dataset import <your beir evaluator>
 
 pipeline = <your pipeline>

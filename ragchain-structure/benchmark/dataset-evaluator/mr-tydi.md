@@ -20,7 +20,7 @@ Note:
 If you want to combined language datasets, you can input 'combined' at language parameter.<br>
 Each language datasets are not translated. They are independent question - passage datasets.
 
-```Python
+```python
 from RAGchain.benchmark.dataset import MrTydiEvaluator
 
 pipeline = <your pipeline>

@@ -16,7 +16,7 @@ Notice:
   by running pip install ir_datasets. If you encounter any issues with ANTIQUE datasets despite installing ir_datasets,
   please refer to the troubleshooting information provided below.
 
-```Python
+```python
 from RAGchain.benchmark.dataset import AntiqueEvaluator
 
 pipeline = <your pipeline>

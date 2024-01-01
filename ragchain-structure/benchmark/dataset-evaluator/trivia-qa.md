@@ -22,7 +22,7 @@ of retrieval ground truths that exceed the context length in ragas metrics.
 
 - This dataset answer is short answer. So, answer metric may be inaccurate.
 
-```Python
+```python
 from RAGchain.benchmark.dataset import TriviaQAEvaluator
 
 pipeline = <your pipeline>
