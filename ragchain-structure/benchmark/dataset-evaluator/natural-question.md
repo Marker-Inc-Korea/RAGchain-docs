@@ -8,7 +8,7 @@ The Wikipedia page has a passage or long answer annotated on it that answers the
 along with one or more short spans from the annotated passage containing the actual answer.<br>
 
 <br>
-Further information if you want, Refer to below link!<br>
+Further information if you want, refer to below link!<br>
 
 [Github](https://github.com/google-research-datasets/natural-questions)<br>
 [Paper](https://research.google/pubs/natural-questions-a-benchmark-for-question-answering-research/)
