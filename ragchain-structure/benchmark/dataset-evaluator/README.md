@@ -5,16 +5,13 @@ The DatasetEvaluator classes in the RAGchain framework are used for evaluating m
 # Supporting Datasets
 
 ### [StrategyQA Dataset](./strategy-qa.md)
-
 A multi-hop open-domain question answering dataset. It has paragraphs from wikipedia, and every question is multi-hop question, which needs to retrieve multiple paragraphs to answer the question.
 Plus, all answers is True/False type. We do not support answer evaluator for this dataset yet. But you can easily check answers by yourself.
 
 ### [Ko-StrategyQA Dataset](./ko-strategy-qa.md)
-
 The Korean version of the StrategyQA dataset.
 
 ### [Qasper Dataset](./qasper.md)
-
 A dataset for question answering on scientific (NLP) papers. It can evaluate the retrieval performance of one NLP paper document, plus answer performance.
 
 ### [MSMARCO Dataset](./ms-marco.md)
@@ -46,3 +43,6 @@ The SearchQA question-answer pairs originate from J! Archive2, which comprehensi
 from the renowned television show Jeopardy!
 
 ### [ANTIQUE Dataset](./antique.md)
+ANTIQUE comprises 2,626 open-domain non-factoid questions sourced from various categories, with a total of 34,011
+manually annotated relevance judgments. These questions originated from real users on Yahoo! 
+Answers, a community question answering service.
