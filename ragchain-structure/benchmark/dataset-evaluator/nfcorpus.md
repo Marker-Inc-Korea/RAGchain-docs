@@ -15,6 +15,8 @@ Notice:
 - Before using NFCorpus dataset, you need to `pip install ir_datasets`. ensure you have installed the required package 
 by running pip install ir_datasets. If you encounter any issues with nfcorpus datasets despite installing ir_datasets, 
 please refer to the troubleshooting information provided below. 
+- The reason context_recall does not accommodate this benchmark is due to the excessive number
+  of retrieval ground truths that exceed the context length in ragas metrics.
 
 ```python
 from RAGchain.benchmark.dataset import NFCorpusEvaluator
