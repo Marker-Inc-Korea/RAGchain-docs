@@ -15,10 +15,8 @@ Further information if you want, Refer to below link!<br>
 
 Raw natural qa dataset is too large,
 This split is derived from the MRQA 2019 Shared Task, and has been formatted and filtered specifically 
-for Question Answering. For access to the original dataset, please refer to this
+for Question Answering. If you want to refer to the original dataset, please refer to this
 [link](https://huggingface.co/datasets/lucadiliello/naturalquestionsshortqa).
-
-
 
 
 # Example Use
