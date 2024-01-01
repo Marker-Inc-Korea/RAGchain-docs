@@ -41,4 +41,8 @@ from 14 trivia and quiz-league websites and evidence are collected from Wikipedi
 NFCorpus is the dataset for Medical Information Retrieval. The queries are  written in non-technical English 
 and sourced from the NutritionFacts.org site. Medical documents to retrieve are sourced from PubMed.
 
+### [SearchQA Dataset](./search-qa.md)
+The SearchQA question-answer pairs originate from J! Archive2, which comprehensively archives all question-answer pairs
+from the renowned television show Jeopardy!
+
 ### [ANTIQUE Dataset](./antique.md)

@@ -44,6 +44,7 @@
       * [natural-question](ragchain-structure/benchmark/dataset-evaluator/natural-question.md)
       * [trivia-qa](ragchain-structure/benchmark/dataset-evaluator/trivia-qa.md)
       * [nfcorpus](ragchain-structure/benchmark/dataset-evaluator/nfcorpus.md)
+      * [search-qa](ragchain-structure/benchmark/dataset-evaluator/search-qa.md)
 * [Utils](utils/README.md)
   * [Query Decomposition](utils/query-decomposition.md)
   * [Evidence Extractor](utils/evidence-extractor.md)
