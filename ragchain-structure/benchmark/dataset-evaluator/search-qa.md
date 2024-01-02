@@ -12,6 +12,7 @@ Should you require further details about SearchQA, please refer to below links.
 # Example Use
 Note:
 - The LLM answer metric may be inaccurate because the answers in the dataset are short-answer.
+- This dataset has many retrieval ground truths per query, so it is recommended to set the ingest size to a small value.
 
 ```python
 from RAGchain.benchmark.dataset import SearchQAEvaluator
