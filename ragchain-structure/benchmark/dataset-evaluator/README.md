@@ -46,3 +46,6 @@ from the renowned television show Jeopardy!
 ANTIQUE comprises 2,626 open-domain non-factoid questions sourced from various categories, with a total of 34,011
 manually annotated relevance judgments. These questions originated from real users on Yahoo! 
 Answers, a community question answering service.
+
+### [ASQA Dataset](./asqa.md)
+ASQA (Factoid Questions Meet Long-Form Answers) is the long-form question answering dataset based on ambiguous factoid questions.
