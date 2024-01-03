@@ -49,3 +49,7 @@ Answers, a community question answering service.
 
 ### [ASQA Dataset](./asqa.md)
 ASQA (Factoid Questions Meet Long-Form Answers) is the long-form question answering dataset based on ambiguous factoid questions.
+
+### [DSTC11-Track5 Dataset](./dstc11-track5.md)
+DSTC11-Track5 is a dataset from the DSTC11-Track5 competition. This dataset is a task-oriented dialogue dataset, 
+and the task is to build a dialogue system that assists users in accomplishing specific goals, such as booking a hotel or a restaurant.
