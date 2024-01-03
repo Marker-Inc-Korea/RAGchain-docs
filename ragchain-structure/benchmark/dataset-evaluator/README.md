@@ -54,3 +54,7 @@ ASQA (Factoid Questions Meet Long-Form Answers) is the long-form question answer
 DSTC11-Track5 is a dataset from the DSTC11-Track5 competition. This dataset is a task-oriented dialogue dataset, 
 and the task is to build a dialogue system that assists users in accomplishing specific goals, such as booking 
 a hotel or a restaurant.
+
+### [ELI5 Dataset](./eli5.md)
+ELI5, a dataset of long-form answers, consists of 270K threads sourced from the Reddit forum "Explain Like I'm Five" (ELI5),
+where an online community provides answers to questions which are comprehensible by five year olds.
