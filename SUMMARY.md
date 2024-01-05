@@ -40,7 +40,6 @@
       * [Strategy-QA](ragchain-structure/benchmark/dataset-evaluator/strategy-qa.md)
       * [ms-marco](ragchain-structure/benchmark/dataset-evaluator/ms-marco.md)
       * [antique](ragchain-structure/benchmark/dataset-evaluator/antique.md)
-      * [beir](ragchain-structure/benchmark/dataset-evaluator/beir.md)
       * [natural-question](ragchain-structure/benchmark/dataset-evaluator/natural-question.md)
       * [trivia-qa](ragchain-structure/benchmark/dataset-evaluator/trivia-qa.md)
       * [nfcorpus](ragchain-structure/benchmark/dataset-evaluator/nfcorpus.md)

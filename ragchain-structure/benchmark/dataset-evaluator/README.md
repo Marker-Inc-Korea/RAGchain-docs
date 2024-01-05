@@ -22,10 +22,6 @@ The passages are top-k results Bing engin searched based on question.
 Mr.TyDi is a multi-lingual benchmark dataset built on TyDi.
 Mr.TyDi apply for languages that is 11 diverse languages and 1 combined diverse languages.
 
-### [BEIR Dataset](./beir.md)
-BEIR is a heterogeneous benchmark that has been built from 18 diverse datasets representing 9 information retrieval tasks.
-In this project, six datasets are utilized: FEVER, FIQA, HOTPOTQA, QUORA, SCIDOCS, and SCIFACT.
-
 ### [Natural Questions Dataset](./natural-question.md)
 Natural Questions (NQ) contains real user questions issued to Google search, and answers found from Wikipedia
 by annotators. NQ is designed for the training and evaluation of automatic question answering systems.
