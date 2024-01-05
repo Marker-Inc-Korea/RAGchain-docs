@@ -1,9 +1,9 @@
 # Overview
 
 ASQA (Factoid Questions Meet Long-Form Answers) is the long-form question answering dataset 
-based on ambiguous factoid questions. ASQA task are not derived from information retrieval task, but answer evaluation task.
+based on ambiguous factoid questions. ASQA task are not derived from information retrieval task, but only answer evaluation task.
 It is not suitable for evaluating retrieval performance. So we provide answer evaluation metric and ingest
-crawled wikipedia documents to db for evaluating answer performance.
+crawled wikipedia documents to db for evaluating answer performance.(**currently working on it!**)
 
 
 [HuggingFace](https://huggingface.co/datasets/din0s/asqa)<br>

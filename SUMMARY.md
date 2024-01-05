@@ -8,6 +8,7 @@
     * [Dataset Loader](ragchain-structure/file-loader/dataset-loader/README.md)
       * [Ko-Strategy-QA Loader](ragchain-structure/file-loader/dataset-loader/ko-strategy-qa-loader.md)
     * [Hwp Loader](ragchain-structure/file-loader/hwp-loader.md)
+    * [Rust Hwp Loader](ragchain-structure/file-loader/rust-hwp-loader.md)
     * [OCR](ragchain-structure/file-loader/ocr/README.md)
       * [Nougat Loader](ragchain-structure/file-loader/ocr/nougat-loader.md)
       * [Mathpix Markdown Loader](ragchain-structure/file-loader/ocr/mathpix-markdown-loader.md)
