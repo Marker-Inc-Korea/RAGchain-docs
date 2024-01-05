@@ -12,22 +12,29 @@ For more details, see our [Installation guide.](installation.md)
 
 The fastest way to use RAGchain is using [pipeline](pipeline/README.md). In this example, we use [`BasicIngestPipeline`](pipeline/basicingestpipeline.md) and [`BasicRunPipeline`](pipeline/basicrunpipeline.md), which is simple but powerful.
 
-### Setup
+### Setup: Linker
 
-Before run pipelines, you need to make Redis DB. It is essential part for link retrieval and DB. Please read [`Linker`](utils/linker.md) docs for more information.
+Before run pipelines, you need to make Redis DB. It is essential part for link retrieval and DB. Please read [`Linker`](utils/linker/README.md) docs for more information.
 
-Great way to make Redis DB is using free Redis.com DB. Go to [redis.com](https://redis.com/try-free/) and make your database.
+You can choose between [RedisDB](utils/linker/redis_linker.md), [DynamoDB](utils/linker/dynamo_linker.md), or [JSON file](utils/linker/json_linker.md) as your data storage. The choice depends on your project's requirements.
 
-After you build your own Redis DB, you can get redis host url, port number, db name (number like 0), and password. You must set that values to environment variable like below.
+For example, let's take a look at a setup that uses `RedisDB` as a linker.
 
+#### Redis Linker Setup
+  
+A great way to set up a Redis DB is using the free Redis.com DB. Go to redis.com and create your database.  
+
+After you build your own Redis DB, you can get the Redis host URL, port number, DB name (number like 0), and password. You must set these values to environment variables like below.
 ```python
-import os
-
-os.environ["REDIS_HOST"] = "your_redis_host"  # replace with your Redis host
-os.environ["REDIS_PORT"] = "your_redis_port"  # replace with your Redis port
-os.environ["REDIS_DB_NAME"] = "your_redis_db_name"  # replace with your Redis database name
-os.environ["REDIS_PW"] = "your_redis_password"  # replace with your Redis password (if applicable)
+LINKER_TYPE="redisdb"
+REDIS_HOST="your redis host url"
+REDIS_PORT="your redis port number"
+REDIS_DB_NAME="your redis db name"
+REDIS_PW="your redis password"
 ```
+If you want to use `DynamoLinker` or `JsonLinker`, you can set `LINKER_TYPE` to "dynamodb" of "json" and set the environment variables for each linker.
+
+### Setup: API Key
 
 We want to use Vector DB retrieval and openai embedding in this example. So, you have to set your OpenAI API key. Set openai API key environment variable like below:
 
