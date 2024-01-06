@@ -8,7 +8,7 @@ Note : We recommend set proper evaluate_size. This evaluator ingest each NLP pap
 So, if you set evaluate_size to 100, it will ingest 100 NLP papers when evaluated. It will take long time.
 You can set random_state for evaluating constant questions. If you change random_state, other questions will be evaluated, even with same evaluate_size.
 
-```Python
+```python
 from RAGchain.benchmark.dataset import QasperEvaluator
 
 pipeline = <your pipeline>

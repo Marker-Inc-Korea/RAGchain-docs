@@ -15,11 +15,12 @@ You can choose languages like below.<br>
 If you want to use languages combined, You can choose 'combined' configuration.
 
 # Example Use
-Notice: Mr.TyDi questions and passages are all same languages in each language datasets.
+Note: 
+- Mr.TyDi questions and passages are all same languages in each language datasets.
 If you want to combined language datasets, you can input 'combined' at language parameter.<br>
 Each language datasets are not translated. They are independent question - passage datasets.
 
-```Python
+```python
 from RAGchain.benchmark.dataset import MrTydiEvaluator
 
 pipeline = <your pipeline>

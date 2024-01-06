@@ -29,7 +29,7 @@ Notice: You can't indent TEST_DOCUMENT for legible. Splitter recognize indent an
 
 First, initialize an instance of `CodeSplitter`. For example:
 
-```Python
+```python
 from RAGchain.preprocess.text_splitter import CodeSplitter
 
 code_splitter = CodeSplitter(language_name= 'PYTHON', chunk_size= 50, chunk_overlap= 0)
@@ -39,7 +39,7 @@ code_splitter = CodeSplitter(language_name= 'PYTHON', chunk_size= 50, chunk_over
 
 You can split document using `split_document()` method. It will return list of [`Passage`](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. For example:
 
-```Python
+```python
 python_doc = Document(
 page_content="""
 def hello_world():
@@ -71,7 +71,7 @@ Passage(id=UUID('661fd986-4303-4e13-b645-83ab1c183b72'), content='# Call the fun
 
 Process is same as python splitter above. Input language_name JS.
 
-```Python
+```python
 from RAGchain.preprocess.text_splitter import CodeSplitter
 
 code_splitter = CodeSplitter(language_name= 'JS', chunk_size= 60, chunk_overlap= 0)
@@ -113,7 +113,7 @@ Passage(id=UUID('128ef1f2-dd79-44cc-8a66-66ed3a5aeb55'), content='// Call the fu
 
 Process is same as python splitter above. Input language_name JS.
 
-```Python
+```python
 from RAGchain.preprocess.text_splitter import CodeSplitter
 
 code_splitter = CodeSplitter(language_name= 'CSHARP', chunk_size= 17, chunk_overlap= 0)

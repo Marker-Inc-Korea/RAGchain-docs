@@ -30,7 +30,11 @@ Refer to pretrained model in this link.  (https://huggingface.co/models)
 We offer to `sample_test_document.txt` for test. 
 If you want to use our test file, try this code!
 
-```Python
+Notice:<br>
+- The chunk_size is quantified in tokens,  according to each tokenizer's tokenization method, 
+such as `tiktoken`, `spaCy`, `SentenceTransformers`, `NLTK`, `huggingFace`, and others.
+
+```python
 import os
 import pathlib
 
@@ -54,7 +58,7 @@ TEST_DOCUMENT = Document(
 
 First, initialize an instance of `TokenSplitter` and input tokensplitter.
 
-```Python
+```python
 from RAGchain.preprocess.text_splitter import TokenSplitter
 
 tiktoken = TokenSplitter(tokenizer_name='tiktoken', chunk_size=1000, chunk_overlap=0)
@@ -65,7 +69,7 @@ tiktoken = TokenSplitter(tokenizer_name='tiktoken', chunk_size=1000, chunk_overl
 
 You can split document using `split_document()` method. It will return list of [`Passage`](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. For example:
 
-```Python
+```python
 tiktoken_passages = tiktoken.split_document(TEST_DOCUMENT)
 ```
 
@@ -73,14 +77,14 @@ tiktoken_passages = tiktoken.split_document(TEST_DOCUMENT)
 
 To use spaCy token splitter, you should install some packages.
 
-```Python
+```python
 !python -m spacy download en_core_web_sm
 !pip install spaCy
 ```
 
 Initialize an instance of TokenSplitter and input parameter `tokenizer_name=spaCy`.
 
-```Python
+```python
 from RAGchain.preprocess.text_splitter import TokenSplitter
 
 spaCy = TokenSplitter(tokenizer_name='spaCy', chunk_size=1000, chunk_overlap=0)
@@ -90,7 +94,7 @@ spaCy = TokenSplitter(tokenizer_name='spaCy', chunk_size=1000, chunk_overlap=0)
 
 You can split document using `split_document()` method. It will return list of [`Passage`](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. For example:
 
-```Python
+```python
 spaCy_passages = spaCy.split_document(TEST_DOCUMENT)
 ```
 
@@ -99,7 +103,7 @@ spaCy_passages = spaCy.split_document(TEST_DOCUMENT)
 
 Initialize an instance of TokenSplitter and input parameter `tokenizer_name=SentenceTransformers`.
 
-```Python
+```python
 from RAGchain.preprocess.text_splitter import TokenSplitter
 
 sentence_transformers = TokenSplitter(tokenizer_name='SentenceTransformers', chunk_overlap=0)
@@ -109,7 +113,7 @@ sentence_transformers = TokenSplitter(tokenizer_name='SentenceTransformers', chu
 
 You can split document using `split_document()` method. It will return list of [`Passage`](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. For example:
 
-```Python
+```python
 SentenceTransformers_passages = sentence_transformers.split_document(TEST_DOCUMENT)
 ```
 
@@ -119,11 +123,11 @@ SentenceTransformers_passages = sentence_transformers.split_document(TEST_DOCUME
 Initialize an instance of TokenSplitter and input parameter `tokenizer_name=NLTK`.
 To use NLTK token splitter, you should install some packages.
 
-```Python
+```python
 !pip install NLTK
 ```
 
-```Python
+```python
 from RAGchain.preprocess.text_splitter import TokenSplitter
 
 NLTK = TokenSplitter(tokenizer_name='NLTK', chunk_size=1000)
@@ -132,7 +136,7 @@ NLTK = TokenSplitter(tokenizer_name='NLTK', chunk_size=1000)
 
 You can split document using `split_document()` method. It will return list of [`Passage`](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. For example:
 
-```Python
+```python
 NLTK_passages = NLTK.split_document(TEST_DOCUMENT)
 ```
 
@@ -142,7 +146,7 @@ NLTK_passages = NLTK.split_document(TEST_DOCUMENT)
 
 If you occur `Lookup Error`, Try this code! This error occurs because some NLTK files have not been downloaded.
 
-```Python
+```python
 import nltk
 nltk.download('all')
 ```
@@ -156,7 +160,7 @@ nltk.download('all')
 AutoTokenizer of huggingface transformer makes you can choose various huggingface's pretrained models. (Refer to this [link](https://huggingface.co/models)!)
 Default pretrained model is `gpt2`.
 
-```Python
+```python
 from RAGchain.preprocess.text_splitter import TokenSplitter
 
 huggingFace = TokenSplitter(tokenizer_name='huggingFace', chunk_size=100, chunk_overlap=0, pretrained_model_name= "gpt2")
@@ -166,7 +170,7 @@ huggingFace = TokenSplitter(tokenizer_name='huggingFace', chunk_size=100, chunk_
 
 You can split document using `split_document()` method. It will return list of [`Passage`](https://nomadamas.github.io/RAGchain/build/html/RAGchain.schema.html#module-RAGchain.schema.passage) objects. For example:
 
-```Python
+```python
 huggingface_passages = huggingFace.split_document(TEST_DOCUMENT)
 ```
 

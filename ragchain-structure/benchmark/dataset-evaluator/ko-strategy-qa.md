@@ -6,7 +6,7 @@ Also, RAGchain makers made this dataset^^
 
 # Example Use
     
-```Python
+```python
 from RAGchain.benchmark.dataset import KoStrategyQAEvaluator
 
 pipeline = <your pipeline>
